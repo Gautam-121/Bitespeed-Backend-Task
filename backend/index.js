@@ -1,4 +1,4 @@
-const app = require("./app,js")
+const app = require("./app.js")
 const dotenv = require("dotenv")
 const connection = require("./config/mongooseConnection.js")
 

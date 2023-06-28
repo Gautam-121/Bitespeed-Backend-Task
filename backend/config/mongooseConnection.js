@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 const connection = ()=>{
 
-    mongoose.connect("mongodb://locahost:27017/speedtask" , {
+    mongoose.connect("mongodb://localhost:27017/speedTask" , {
         useNewUrlParser : true
     })
     .then(data => console.log("mongoDB is connected on" , data.connection.host))

@@ -6,17 +6,16 @@ const customerSchema = new mongoose.Schema({
 
   phoneNumber: {
     type: String,
-    required: [true, "phoneNumber must not be empty"],
-    match: [phoneNumberRegex, "ph-number is not vald"],
+    // required: [true, "phoneNumber must not be empty"],
+    // match: [phoneNumberRegex, "ph-number is not vald"],
   },
   email: {
     type: String,
-    required: [true, "email must not be empty"],
-    match: [emailRegex, "email is not valid"],
+    // required: [true, "email must not be empty"],
+    // match: [emailRegex, "email is not valid"],
   },
   linkedId: {
     type: mongoose.Schema.Types.ObjectId,
-    required: [true, "linkedId fill with some value"],
     default: null,
   },
   linkPrecedence: {
@@ -30,6 +29,7 @@ const customerSchema = new mongoose.Schema({
   },
   updatedAt: {
     type: Date,
+    default : new Date(Date.now())
   },
   isDeleted: {
     type: Boolean,
@@ -37,6 +37,7 @@ const customerSchema = new mongoose.Schema({
   },
   deletedAt: {
     type: Date,
+    default : null
   },
 });
 

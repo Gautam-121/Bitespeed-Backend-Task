@@ -1,3 +1,5 @@
-export const phoneNumberRegex = ""
+const phoneNumberRegex = ""
 
-export const emailRegex = ""
+const emailRegex = ""
+
+module.exports = {phoneNumberRegex , emailRegex}
